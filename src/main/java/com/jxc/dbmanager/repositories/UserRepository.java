@@ -13,6 +13,4 @@ public interface UserRepository extends ElasticsearchRepository<User, String> {
 
     Page<User> findAll();
 
-    Optional<User> findByEmail(String email);
-
 }
