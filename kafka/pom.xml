@@ -13,7 +13,7 @@
     <artifactId>kafka</artifactId>
     <version>${parent.version}</version>
     <name>Kafka</name>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <domain.version>1.0.0</domain.version>

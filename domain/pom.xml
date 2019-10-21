@@ -13,7 +13,7 @@
     <artifactId>domain</artifactId>
     <version>${parent.version}</version>
     <name>Domain</name>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

@@ -29,7 +29,7 @@ As this project contains classes that all the systems rely on, any update must b
 Therefore, when a new version of this project is released, you have to update your dependencies to it. 
 To do so:
 1. Come back to this folder's root
-2. Type `mvn package` -> this will build every module and place a jar of them in your local maven repository. Then you will be able to use them in other projects.
+2. Type `mvn install` -> this will build every module and place a jar of them in your local maven repository. Then you will be able to use them in other projects.
 3. You're all set
 
 ## Using
