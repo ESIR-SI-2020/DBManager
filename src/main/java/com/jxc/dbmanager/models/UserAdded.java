@@ -1,14 +1,21 @@
 package com.jxc.dbmanager.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.util.Date;
 
 @Data
-@Document(indexName = "useradded")
+@NoArgsConstructor
+@AllArgsConstructor
+@Document(indexName = "pocket", type = "user_added")
 public class UserAdded {
 
-    private Date creationDate;
+   @Id
+   private String id;
+   private Date creationDate;
 
 }

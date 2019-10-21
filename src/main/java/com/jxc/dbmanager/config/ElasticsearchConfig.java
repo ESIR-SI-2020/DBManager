@@ -28,7 +28,7 @@ public class ElasticsearchConfig {
     @Value("${elasticsearch.clustername:pocket-cluster}")
     private String clusterName;
 
-    @Value("${elasticsearch.home:D:/Programmes/elasticsearch/5.6.0}")
+    @Value("${elasticsearch.home:C:/Programmes/elasticsearch-5.6.0}")
     private String home;
 
     @Bean
