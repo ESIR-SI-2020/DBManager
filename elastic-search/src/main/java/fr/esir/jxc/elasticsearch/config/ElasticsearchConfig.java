@@ -41,7 +41,8 @@ public class ElasticsearchConfig {
           .put("path.home", host)
           .put("cluster.name", clusterName).build();
 
-        try (TransportClient transportClient = new PreBuiltTransportClient(elasticsearchSettings)) {
+        try {
+            TransportClient transportClient = new PreBuiltTransportClient(elasticsearchSettings);
             return transportClient.addTransportAddress(
               new InetSocketTransportAddress(InetAddress.getByName(host), port)
             );
