@@ -34,11 +34,5 @@ public class User {
     private Address address;
     private List<String> friends;
 
-    @Field(type = FieldType.Nested)
-    private List<Article> articles;
-
-    @Field(type = FieldType.Nested)
-    private List<Article> sharedArticles;
-
 }
 

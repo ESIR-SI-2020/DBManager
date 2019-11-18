@@ -14,11 +14,10 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class Article {
 
-    @NonNull
-    private String id;
-    @NonNull
-    private String url;
-
+    @NonNull private String id;
+    @NonNull private String url;
+    private String owner;
+    private String sharedBy;
     private List<String> tags;
     private List<String> suggestedTags;
 
