@@ -42,7 +42,7 @@ To use the domain module, please add the following dependency:
 <dependency>
     <groupId>fr.esir.jxc</groupId>
     <artifactId>domain</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
@@ -56,7 +56,7 @@ To use the domain module, please add the following dependency:
 <dependency>
     <groupId>fr.esir.jxc</groupId>
     <artifactId>elastic-search</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
