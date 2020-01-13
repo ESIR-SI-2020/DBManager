@@ -28,8 +28,6 @@ public class Event {
   private LocalDateTime createdAt;
   
   public static Optional<Event> of(Object event) {
-        LocalDate currentDate = LocalDate.now();
-        LocalTime currentTime = LocalTime.now();
         return Optional.of(new Event(UUID.randomUUID().toString(), event.getClass().getSimpleName(), Json.MAPPER.createObjectNode().putPOJO("event", event), LocalDateTime.now()));
     }
 }
