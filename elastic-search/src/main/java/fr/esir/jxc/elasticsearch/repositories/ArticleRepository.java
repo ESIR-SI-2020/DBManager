@@ -11,4 +11,5 @@ public interface ArticleRepository extends ElasticsearchRepository<Article, Stri
 
     Page<Article> findAll();
 
+    Page<Article> findByOwner(String owner);
 }
