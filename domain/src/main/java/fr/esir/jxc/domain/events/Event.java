@@ -1,12 +1,21 @@
 package fr.esir.jxc.domain.events;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.Date;
+import java.util.Optional;
+import java.util.UUID;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
+import fr.esir.jxc.domain.utils.Json;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 @Data
 @NoArgsConstructor
@@ -18,5 +27,7 @@ public class Event {
   private ObjectNode metadata;
   private LocalDateTime createdAt;
   
+  public static Optional<Event> of(Object event) {
+        return Optional.of(new Event(UUID.randomUUID().toString(), event.getClass().getSimpleName(), Json.MAPPER.createObjectNode().putPOJO("event", event), LocalDateTime.now()));
+    }
 }
-
