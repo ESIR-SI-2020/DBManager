@@ -16,6 +16,6 @@ public class UserAdded {
 
     @Id
     private String id;
-    private Date creationDate;
+    private long creationDate; // epoch format
 
 }
