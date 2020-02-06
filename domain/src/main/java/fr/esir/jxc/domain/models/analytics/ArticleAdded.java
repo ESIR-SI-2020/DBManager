@@ -5,7 +5,6 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -14,7 +13,7 @@ import java.util.Date;
 public class ArticleAdded {
     @Id
     private String id;
-    private LocalDate creationDate;
+    private Date creationDate;
     private String url;
     private String email;
 
