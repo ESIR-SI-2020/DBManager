@@ -32,13 +32,13 @@ public class ElasticsearchConfig {
     @Value("${elasticsearch.clustername}")
     private String clusterName;
 
-    @Value("${elasticsearch.home:}")
-    private String home;
+    //@Value("${elasticsearch.home:}")
+    //private String home;
 
     @Bean
     public Client client() {
         final Settings elasticsearchSettings = Settings.builder()
-          .put("path.home", host)
+          //.put("path.home", host)
           .put("cluster.name", clusterName).build();
 
         try {
